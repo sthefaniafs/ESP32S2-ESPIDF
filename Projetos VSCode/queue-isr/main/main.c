@@ -20,7 +20,7 @@ QueueHandle_t gpioEvtQueue = NULL;
 void button_task (void* pvParameters);
 void led_task (void* pvParameters);
 
-static void IRAM_ATTR gpioIsrHandler(void *arg){
+static void IRAM_ATTR gpio_isr_handler(void *arg){
     uint32_t gpioNum = (uint32_t) arg;
     BaseType_t xHigherPriorityTaskWoken = pdTRUE;
     xQueueSendFromISR(gpioEvtQueue, &gpioNum, &xHigherPriorityTaskWoken);
@@ -48,8 +48,8 @@ void app_main(void)
 
     //install gpio isr service and add isr handler for button1 and button2
     gpio_install_isr_service(ESP_INTR_FLAG_LEVEL1);                         //install gpio isr service
-    gpio_isr_handler_add(buttonPin1, gpioIsrHandler, (void*) buttonPin1);  //add isr handler for button1
-    gpio_isr_handler_add(buttonPin2, gpioIsrHandler, (void*) buttonPin2); //add isr handler for button2
+    gpio_isr_handler_add(buttonPin1, gpio_isr_handler, (void*) buttonPin1);  //add isr handler for button1
+    gpio_isr_handler_add(buttonPin2, gpio_isr_handler, (void*) buttonPin2); //add isr handler for button2
 
     gpioEvtQueue = xQueueCreate(2, sizeof(int32_t));
     xTaskCreate(button_task, "button task", 2048, NULL, 2, NULL);

@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+C:/Users/sthef/OneDrive/Documentos/repositorios-git/ESP32S2-ESPIDF/Projetos VSCode/task-notification/build/CMakeFiles/bootloader
+C:/Users/sthef/OneDrive/Documentos/repositorios-git/ESP32S2-ESPIDF/Projetos VSCode/task-notification/build/CMakeFiles/bootloader.rule
+C:/Users/sthef/OneDrive/Documentos/repositorios-git/ESP32S2-ESPIDF/Projetos VSCode/task-notification/build/CMakeFiles/bootloader-complete.rule
+C:/Users/sthef/OneDrive/Documentos/repositorios-git/ESP32S2-ESPIDF/Projetos VSCode/task-notification/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+C:/Users/sthef/OneDrive/Documentos/repositorios-git/ESP32S2-ESPIDF/Projetos VSCode/task-notification/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+C:/Users/sthef/OneDrive/Documentos/repositorios-git/ESP32S2-ESPIDF/Projetos VSCode/task-notification/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+C:/Users/sthef/OneDrive/Documentos/repositorios-git/ESP32S2-ESPIDF/Projetos VSCode/task-notification/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+C:/Users/sthef/OneDrive/Documentos/repositorios-git/ESP32S2-ESPIDF/Projetos VSCode/task-notification/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+C:/Users/sthef/OneDrive/Documentos/repositorios-git/ESP32S2-ESPIDF/Projetos VSCode/task-notification/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+C:/Users/sthef/OneDrive/Documentos/repositorios-git/ESP32S2-ESPIDF/Projetos VSCode/task-notification/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
